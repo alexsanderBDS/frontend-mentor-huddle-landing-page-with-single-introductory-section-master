@@ -11,6 +11,12 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="styles.css" />
 
@@ -20,7 +26,7 @@
   </head>
   <body>
     <main class="container">
-      <img src="images/logo.svg" alt="logo" class="logo" />
+      <img src="images/logo.svg" alt="logo" class="logo" width="100" />
       <img
         src="images/illustration-mockups.svg"
         alt="design models"
@@ -34,23 +40,43 @@
           so does your audience. Create connections with your users as you
           engage in genuine discussion.
         </p>
+        <a href="#register" class="btn">Register</a>
       </div>
-      <a href="#register" class="btn">Register</a>
       <address class="link">
         <ul class="link-list">
-          <li class="link-item"><a href="#facebook">F</a></li>
-          <li class="link-item"><a href="#twitter">T</a></li>
-          <li class="link-item"><a href="#instagram">I</a></li>
+          <li class="link-item">
+            <a href="#facebook"
+              ><ion-icon name="logo-facebook" class="icon"></ion-icon
+            ></a>
+          </li>
+          <li class="link-item">
+            <a href="#twitter"
+              ><ion-icon name="logo-twitter" class="icon"></ion-icon
+            ></a>
+          </li>
+          <li class="link-item">
+            <a href="#instagram"
+              ><ion-icon name="logo-instagram" class="icon"></ion-icon
+            ></a>
+          </li>
         </ul>
       </address>
-      <footer>
+      <footer class="footer">
         <p class="attribution">
           Challenge by
           <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
             >Frontend Mentor</a
-          >. Coded by <a href="#">Your Name Here</a>.
+          >. Coded by <a href="https://github.com/alexsanderbds">Alexsander</a>.
         </p>
       </footer>
     </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>

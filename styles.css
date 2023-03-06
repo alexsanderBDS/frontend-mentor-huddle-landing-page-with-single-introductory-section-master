@@ -3,7 +3,15 @@
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  /* color: hsl(228, 45%, 44%); */
+  color: cadetblue;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
 }
 
 html {
@@ -37,4 +45,118 @@ html {
   --80ws: calc(80rem / 16);
   --96ws: calc(96rem / 16);
   --128ws: calc(128rem / 16);
+
+  /* # COLORS */
+  --color-pv: hsl(257, 40%, 49%);
+  --color-psm: hsl(300, 69%, 71%);
+
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: var(--16px);
+  background-color: #000;
+  color: #fff;
+
+  overflow-x: hidden;
+}
+
+.container {
+  min-width: calc(375rem / 16);
+  max-width: calc(376rem / 16);
+  margin: 0 auto;
+  background-color: var(--color-pv);
+  min-height: 100vh;
+  background-image: url(images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  padding: var(--32ws);
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--48ws);
+
+  position: relative;
+}
+
+.logo {
+  width: calc(120rem / 16);
+}
+
+.heading {
+  font-family: "Poppins", sans-serif;
+  font-size: var(--24px);
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--24ws);
+}
+
+.text {
+  text-align: center;
+  line-height: 1.5;
+}
+
+.main-img {
+  width: 100%;
+}
+
+.btn:link,
+.btn:visited {
+  margin: auto;
+  width: calc(220rem / 16);
+  padding: var(--12ws) var(--24ws);
+  text-align: center;
+  text-decoration: none;
+
+  background-color: #fff;
+  color: var(--color-pv);
+  border-radius: var(--32ws);
+  box-shadow: 0 0 12px 2px rgb(0 0 0 / 31%);
+
+  transition: background 0.5s, color 0.5s;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: var(--color-psm);
+  color: #fff;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-list {
+  list-style: none;
+
+  display: flex;
+  gap: var(--12ws);
+}
+.icon {
+  font-size: var(--24px);
+  color: #fff;
+
+  transition: color 0.5s;
+}
+
+.icon:hover {
+  color: var(--color-psm);
+}
+
+.footer {
+  position: absolute;
+  /* display: none; */
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  width: 100%;
 }
